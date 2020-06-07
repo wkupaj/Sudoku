@@ -72,7 +72,7 @@ public class SudokuBoardView extends View {
             canvas.drawLine(i * cellSize, 0F, i * cellSize, getHeight(), tmpPaint);
             canvas.drawLine(0F, i * cellSize, getWidth(), i * cellSize, tmpPaint);
         }
-
+        drawText(canvas);
     }
 
     private void fillChecked(Canvas canvas) {
@@ -87,7 +87,7 @@ public class SudokuBoardView extends View {
                     canvas.drawRect(c * cellSize, r * cellSize, (c + 1) * cellSize, (r + 1) * cellSize, otherCellPaint);
                 }
             }
-        drawText(canvas);
+
     }
 
     private void drawText(Canvas canvas) {
